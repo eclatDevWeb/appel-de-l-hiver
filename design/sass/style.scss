@@ -10,11 +10,18 @@ body {
 .nav-link:hover {
      color: #f1f1f1;
 }
-.alert-success {
+.alert-success  {
      color: #c3e7e6;
      background: #3f7c7a;
+}
+.bg-warning {
+     background: #3f7c7a!important;
 }
 
 .card div{
      max-width: 495px;
+}
+
+.badge{
+     font-size: 1rem;
 }

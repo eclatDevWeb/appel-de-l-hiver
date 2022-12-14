@@ -55,9 +55,9 @@
         >
           <div
             class="progress-bar progress-bar-animated progress-bar-striped"
-            style="background-color: #356664; width: 26%"
+            style="background-color: #356664; width: 46%; font-size: 1.4em;"
           >
-            26%
+            46%
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
                     />
                 </div>
                 <div class="card-header">
-                    <h3 class="card-title display-6">Les oies grises</h2>
+                    <h3 class="card-title display-6">Les oies grises</h3>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
@@ -98,8 +98,9 @@
           alt="ours brun"
           />
         </div>
-        <div class="card-header">
-            <h3 class="card-title display-6">L'ours brun</h2>
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h3 class="card-title display-6">L'ours brun</h3>
+            <span class="badge bg-danger py-3 ">Le supplement Barbecue</span>
             </div>
             <div class="card-body">
                 <p class="card-text">
@@ -121,7 +122,7 @@
                 />
             </div>
             <div class="card-header">
-                <h3 class="card-title display-6">Le renard arctique</h2>
+                <h3 class="card-title display-6">Le renard arctique</h3>
                 </div>
                 <div class="card-body">
                     <p class="card-text">
@@ -142,20 +143,54 @@
                     alt="wapiti"
                     />
                 </div>
-                <div class="card-header">
-                    <h3 class="card-title display-6">Le panda roux</h2>
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3 class="card-title display-6 ">Le panda roux</h3>
+                    <span class="badge p-3 bg-success ">Trop cute</span>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
                             Le Petit panda ou Panda roux (Ailurus fulgens), parfois appelé « Panda fuligineux » ou « Panda éclatant », est un mammifère protégé et en danger d'extinction de la famille des Ailuridés. Le panda roux est originaire de l'Himalaya et du Sud-Ouest de la Chine et préfère vivre dans les forêts montagneuses mixtes tempérées de la région, riches en bambou.
                         </p>
                     </div>
-                    <div class="card-footer d-flex justify-content-between"><span class="badge bg-success">Trop cute</span> <p class=" card-text"></p> un mystère de plus...</div>
+                    <div class="card-footer "> <p class=" card-text"></p> un mystère de plus...</div>
                 </div>
             </div>
         </section>
-        <footer class="mt-5 bg-dark text-light m-0 py-3 h5">
-            <div class="container ">© Aurelien Gallea</div>
+        <section class="mt-5 bg-gradient bg-white p-5">
+          <form class="text-light d-flex flex-column mx-auto bg-warning rounded p-3" style="max-width: 400px ;">
+            <div>
+              <label class="form-label"  for="prenom">Prénom</label>
+              <input class="form-control" type="text" name="prenom" id="prenom">
+            </div>
+            <div class="mt-2">
+              <label class="form-label" for="nom">Nom</label>
+              <input class="form-control" type="text" name="nom" id="nom">
+            </div>
+            <div class="form-check mt-4">
+              <input class="form-check-input" type="radio" id="man" name="gender">
+              <label class="form-check-label" for="man">Je suis un homme</label>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="gender" id="woman">
+              <label class="form-check-label" for="woman">Je suis une femme</label>
+            </div>
+            <div class="form-switch mt-2">
+              <input class="form-check-input " id="text" type="checkbox">
+              <label for="text">Je m'engage à respecter la nature</label>
+            </div>
+            <div class="form-switch mt-2">
+              <input class="form-check-input" type="checkbox" name="" id="text2">
+              <label for="text2">Je ne nourrirai pas les animaux, avec de la nourriture ou moi-même</label>
+            </div>
+            <div class="btn-group gap-3">
+              <button class="btn btn-dark rounded-pill mt-5">Payer 499€</button>
+              <button class="btn btn-light rounded-pill mt-5">Payer 699€</button>
+              <button class="btn btn-secondary rounded-pill mt-5">Payer 799€</button>
+            </div>
+          </form>
+        </section>
+        <footer class=" bg-dark text-light m-0 py-3 h5">
+            <div class="container">© Aurelien Gallea</div>
         </footer>
         </body>
         </html>
