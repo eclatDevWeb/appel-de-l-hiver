@@ -169,18 +169,31 @@
         </div>
       </div>
     </section>
-    <section class="mt-5 bg-gradient bg-white pt-5">
+    <!-- formulaire d'inscription -->
+    <section class="mt-5 bg-gradient bg-white py-5">
       <form
-        class="text-light d-flex flex-column mx-auto bg-colorNew rounded p-3"
-        style="max-width: 400px"
+        class="text-light d-flex flex-column mx-auto bg-colorNew rounded pt-3 px-4 pb-2 "
+        style="max-width: 500px"
       >
-        <div>
-          <label class="form-label" for="prenom">Prénom</label>
-          <input class="form-control" type="text" name="prenom" id="prenom" />
+        <div><h4 class="text-center">Fiche d'inscription</h4></div>
+        <div class="d-flex justify-content-between">
+
+          <div>
+            <label class="form-label" for="prenom">Prénom</label>
+            <input class="form-control " type="text" name="prenom" id="prenom" />
+          </div>
+          <div>
+            <label class="form-label" for="nom">Nom</label>
+            <input class="form-control" type="text" name="nom" id="nom" />
+          </div>
         </div>
-        <div class="mt-2">
-          <label class="form-label" for="nom">Nom</label>
-          <input class="form-control" type="text" name="nom" id="nom" />
+        <div class="mt-1">
+          <label class="form-label" for="email">Adresse email</label>
+          <div class="input-group w-50 ">
+
+            <input class="form-control " type="email" name="mail" id="email">
+            <span class="input-group-text">@</span>
+          </div>
         </div>
         <div class="form-check mt-4">
           <input class="form-check-input" type="radio" id="man" name="gender" />
@@ -206,13 +219,19 @@
             moi-même</label
           >
         </div>
-        <div class="text-center mt-5">
+        <div class="btn-group gap-3 mt-4">
+          <button class="btn btn-outline-light rounded-3">Vider les champs</button>
+          <button class="btn btn-secondary rounded-3">Valider l'inscription</button>
+        </div>
+        <hr class="mt-5">
+        <!-- Les tarifs -->
+        <div class="text-center mt-4 mb-2">
           <h4>Formules</h4>
         </div>
-        <div class="">
-          <table class="table text-light  table-bordered table-dark d-table">
+        <div>
+          <table class="table text-light  table-bordered table-dark align-middle text-center">
             <thead>
-              <tr class="d-table-row">
+              <tr>
                 <th>Offres</th>
                 <th>Starter</th>
                 <th>Premium</th>
@@ -220,8 +239,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="d-table-row">
-                <th>2 jours d'hôtel</th>
+              <tr >
+                <th>5 jours d'hôtel</th>
                 <td>
                   <img src="./design/images/check.png" alt="ok" width="30px" />
                 </td>
@@ -232,7 +251,7 @@
                   <img src="./design/images/check.png" alt="ok" width="30px" />
                 </td>
               </tr>
-              <tr class="">
+              <tr>
                 <th>pension complète</th>
                 <td>
                   <img
@@ -241,7 +260,7 @@
                     width="30px"
                   />
                 </td>
-                <td>
+                <td class=>
                   <img src="./design/images/check.png" alt="ok" width="30px" />
                 </td>
                 <td>
@@ -299,7 +318,7 @@
         </div>
       </form>
     </section>
-    <footer class="bg-dark text-light m-0 py-3 h5">
+    <footer class="bg-dark text-light  py-3 h5">
       <div class="container">© Aurelien Gallea</div>
     </footer>
   </body>
